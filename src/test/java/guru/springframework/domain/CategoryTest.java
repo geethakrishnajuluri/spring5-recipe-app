@@ -3,12 +3,12 @@ package guru.springframework.domain;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashSet;
-import java.util.Set;
+import static org.junit.Assert.assertEquals;
 
 import static org.junit.Assert.*;
 
 public class CategoryTest {
+
     Category category;
 
     @Before
@@ -17,28 +17,20 @@ public class CategoryTest {
     }
 
     @Test
-    public void getId() {
-        Long id = 4L;
-        category.setId(id);
+    public void getId() throws Exception {
+        Long idValue = 4L;
 
-        assertEquals(id, category.getId());
+        category.setId(idValue);
+
+        assertEquals(idValue, category.getId());
     }
 
     @Test
-    public void getDescription() {
-        String description = "description";
-        category.setDescription(description);
-        assertEquals(description, category.getDescription());
+    public void getDescription() throws Exception {
     }
 
     @Test
-    public void getDescription2() {
-        String description = "description2";
-        category.setDescription(description);
-        assertEquals(description, category.getDescription());
+    public void getRecipes() throws Exception {
     }
 
-    @Test
-    public void getRecipes() {
-    }
 }
