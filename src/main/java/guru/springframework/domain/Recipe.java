@@ -52,5 +52,4 @@ public class Recipe {
         this.ingredients.add(ingredient);
         return this;
     }
-
 }

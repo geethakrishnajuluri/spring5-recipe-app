@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Data
-@EqualsAndHashCode(exclude = "recipe")
+@EqualsAndHashCode(exclude = {"recipe"})
 @Entity
 public class Notes {
 
@@ -18,12 +18,5 @@ public class Notes {
 
     @Lob
     private String recipeNotes;
-
-    public Notes() {
-    }
-
-    protected boolean canEqual(final Object other) {
-        return other instanceof Notes;
-    }
 
 }
