@@ -32,6 +32,13 @@ public class CategoryTest {
     }
 
     @Test
+    public void getDescription2() {
+        String description = "description2";
+        category.setDescription(description);
+        assertEquals(description, category.getDescription());
+    }
+
+    @Test
     public void getRecipes() {
     }
 }
